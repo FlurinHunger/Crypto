@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Timosi</title>
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta description="A simple Page to see the Current price of popular Cryptocurrencies in realtime.">
+		<meta name="keywords" content="Timosi, Crypto price, Bitcoin, Ethereum, Cardano, Avalanche">
+	</head>
+	<body>
+		<noscript>
+			<h2 style="color: white;">Please enable Javascript for this to work properly.</h2>
+		</noscript>
+		<div class="dropdown">
+  		<button class="dropbtn">FIAT</button>
+  		<div class="dropdown-content">
+    		<a onclick="changeClass('usd');">USD</a>
+    		<a onclick="changeClass('chf');">CHF</a>
+    		<a onclick="changeClass('eur');">EUR</a>
+  		</div>
+		</div>
+		<div class="dropdown">
+  		<button class="dropbtn">Currency</button>
+  		<div class="dropdown-content">
+    		<a onclick="changeBTC();">BTC</a>
+    		<a onclick="changeETH();">ETH</a>
+    		<a onclick="changeDOT();">DOT</a>
+				<a onclick="changeAVAX();">AVAX</a>
+				<a onclick="changeADA();">ADA</a>
+  		</div>
+		</div>
+    <div class="BTC-price container">
+      <h1 id="title" class="margin">The Bitcoin price is currently: </h1>
+			<h1 id="priceusd" class="price priceusd active"></h1>
+			<h1 id="priceeur" class="price priceeur wdn-text-hidden"></h1>
+			<h1 id="pricechf" class=" price pricechf wdn-text-hidden"></h1>
+    </div>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="script.js" charset="utf-8"></script>
+</html>
