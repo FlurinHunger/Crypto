@@ -7,7 +7,6 @@ input = 'https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,CHF,EUR
 
 //automatic reload every 20 seconds
 setInterval(function(){
-  console.log(input);
   reload()
 }, 20000);
 
@@ -16,7 +15,6 @@ setInterval(function(){
 function reload() {
   $.getJSON(input,
     function(data){
-      console.log(data);
       var pricechf = data.CHF;
       var priceusd = data.USD;
       var priceeur = data.EUR;
@@ -64,7 +62,6 @@ function changeADA() {
 
 //change FIAT Functions
 function changeClass(value) {
-  console.log(value);
     if (eur.classList.contains('active')) {
     eur.classList.add('wdn-text-hidden');
     eur.classList.remove('active');
